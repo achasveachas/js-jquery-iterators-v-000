@@ -7,4 +7,8 @@ $(document).ready(function(){
   $('div').each(function(index, div) {
     $(this).append("This is div number " + (index + 1));
   })
+
+  $.map(names, function(name, index) {
+    console.log(index + ". " + name + " loves Javascript");
+  })
 });

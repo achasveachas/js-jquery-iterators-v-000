@@ -11,4 +11,10 @@ $(document).ready(function(){
   $.map(names, function(name, index) {
     console.log(index + ". " + name + " loves Javascript");
   })
+
+  function listIterate(){
+    return $('li').map(function(item, index){
+        return item.innerHTML;
+    });
+  }
 });
